@@ -20,13 +20,14 @@ customize:
         author: Jaime L. Suncin
         author_title: Profesional del desarrollo de software
         location: La Libertad, El Salvador
-        follow: https://github.com/leosuncin/
+        follow: https://twitter.com/leosuncin
     highlight: monokai
     sidebar: right # sidebar position, options: left, right or leave it empty
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links:
         github: https://github.com/leosuncin
+        linkedin: https://sv.linkedin.com/in/JaimeSuncin
         twitter: https://twitter.com/leosuncin
         facebook: https://facebook.com/jl.suncin
     social_link_tooltip: true # enable the social link tooltip, options: true, false
