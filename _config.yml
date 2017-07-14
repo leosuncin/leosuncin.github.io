@@ -81,3 +81,10 @@ deploy:
   type: git
   repo: git@github.com:leosuncin/leosuncin.github.io.git
   branch: master
+
+# SEO sitemap
+## Docs: https://www.npmjs.com/package/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
