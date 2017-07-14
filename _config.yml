@@ -88,3 +88,10 @@ sitemap:
   path: sitemap.xml
   tag: false
   category: false
+
+# Atom 1.0 or RSS 2.0 feed.
+## Docs: https://www.npmjs.com/package/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
