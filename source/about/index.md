@@ -3,6 +3,4 @@ layout: "page"
 comments: false
 ---
 
-Aquí debería escribir algo acerca de mí...
-
-> Oh mira algo con que proscratinar.
+> Bien aventurados los que me copien por que de ellos serán mis errores
