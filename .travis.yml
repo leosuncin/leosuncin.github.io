@@ -1,8 +1,13 @@
 language: node_js
 
+node_js:
+  - node
+
 branches:
   only:
     - hexo
+
+cache: npm
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_c82e0a7ea724_key -iv $encrypted_c82e0a7ea724_iv -in deploy_key.enc -out deploy_key -d
