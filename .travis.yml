@@ -1,0 +1,25 @@
+language: node_js
+
+branches:
+  only:
+    - hexo
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_c82e0a7ea724_key -iv $encrypted_c82e0a7ea724_iv -in deploy_key.enc -out deploy_key -d
+  - chmod 600 ./deploy_key
+  - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+  - eval $(ssh-agent -s)
+  - ssh-keyscan github.com > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - ssh-add ./deploy_key
+
+install:
+  - npm ci
+
+before_script:
+  - git config --global user.name 'Jaime Leonardo Suncin Cruz'
+  - git config --global user.email 'leosuncin@gmail.com'
+  - cp -u _config.yml.icarus themes/icarus/_config.yml
+
+script:
+- npm run deploy
